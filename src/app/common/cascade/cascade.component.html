@@ -32,8 +32,9 @@
 		</div>
 		<div class="col-sm-9">
 			<h4>Anchors</h4>
-			<a href="#" class="btn">Submit</a>
+			<a href="#" class="btn btn--default">Default</a>
 			<a href="#" class="btn btn--alt">Cancel</a>
+			<a href="#" class="btn btn--success btn--shadow">Shadow</a>
 			<a href="#" class="btn btn--alt btn--back">Back</a>
 
 			<h4>Buttons</h4>
@@ -50,9 +51,10 @@
 			<h3>Form fields</h3>
 		</div>
 		<div class="col-sm-9">
-		<input type="text" name="">
+			<input type="text" class="form-control" placeholder="Text input">
+			<input type="password" class="form-control" placeholder="Password" value="asdfdsfs">
 			<br>
-			<select>
+			<select class="form-control">
 				<option value="option1">Option 1</option>
 				<option value="option2">Option 2</option>
 				<option value="option3">Option 3</option>
@@ -64,9 +66,23 @@
 <div class="panel panel--primary">
 	<div class="row">
 		<div class="col-sm-3">
-			<h3></h3>
+			<h3>Containers</h3>
 		</div>
 		<div class="col-sm-9">
+			<h4>Primary panel</h4>
+			<div style="background-color: grey; padding: 10px">
+				<div class="panel panel--primary" style="height: 80px">
+					<h3 class="panel__heading">Panel heading</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-9 col-sm-offset-3">
+			<h4>Secondary panel</h4>
+			<div style="background-color: grey; padding: 10px">
+				<div class="panel panel--secondary" style="height: 50px"></div>
+			</div>
 		</div>
 	</div>
 </div>
