@@ -49,18 +49,16 @@ table {
   border-spacing: 0;
 }
 
-
-//
 @font-face {
-//  font-family: 'Open Sans';
-//  src: url('../fonts/open-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
-//  src: url('../fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-//  url('../fonts/open-sans-v13-latin-regular.woff') format('woff'), /* Pretty Modern Browsers */
-//  url('../fonts/open-sans-v13-latin-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-//  url('../fonts/open-sans-v13-latin-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/open-sans-v13-latin-regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/open-sans-v13-latin-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/open-sans-v13-latin-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-//
-//$fontstack: "Open Sans", Arial, sans-serif;
+
+$fontstack: "Open Sans", Arial, sans-serif;
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -73,8 +71,6 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
 }
-
-//headings
 
 h1, .h1,
 h2, .h2,
