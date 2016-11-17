@@ -5,7 +5,8 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+    "prebuild": "rimraf dist",
+    "build": "webpack --config config/webpack.prod.js --progress --profile --bail"
   },
   "licenses": [
     {
@@ -48,7 +49,7 @@
     "phantomjs-prebuilt": "^2.1.7",
     "postcss-loader": "^1.1.1",
     "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.2",
+    "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "typescript": "^2.0.10",

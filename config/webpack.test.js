@@ -23,12 +23,12 @@ module.exports = {
                 loader: 'null'
             },
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 exclude: helpers.root('src', 'app'),
                 loader: 'null'
             },
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 include: helpers.root('src', 'app'),
                 loader: 'raw'
             }
