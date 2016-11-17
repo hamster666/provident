@@ -12,6 +12,7 @@
 /.vscode
 .project
 .classpath
+provident.iml
 
 #System Files
 .DS_Store
