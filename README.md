@@ -5,3 +5,6 @@ npm run build
 npm test 
 
 npm run e2e
+
+https://angular.io/styleguide
+
