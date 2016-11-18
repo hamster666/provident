@@ -15,6 +15,7 @@
 /.vscode
 .project
 .classpath
+provident.iml
 
 # error logs
 /npm-debug.log

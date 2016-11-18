@@ -10,7 +10,8 @@
         "e2e": "npm run protractor",
         "protractor": "protractor",
         "prebuild": "rimraf dist",
-        "build": "webpack --config config/webpack.prod.js --progress --profile --bail"
+        "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
+        "sprite": "sprity create ./public/images ./public/images/**/*.png -s ../css/sprite.scss -p sass --style-type scss"
     },
     "licenses": [
         {
@@ -60,6 +61,8 @@
         "typescript": "^2.0.10",
         "webpack": "^1.13.3",
         "webpack-dev-server": "^1.14.1",
-        "webpack-merge": "^0.14.0"
+        "webpack-merge": "^0.14.0",
+        "sprity": "^1.0.8",
+        "sprity-sass": "^1.0.4"
     }
 }
