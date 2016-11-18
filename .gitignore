@@ -3,6 +3,9 @@
 # compiled output
 /dist
 
+# test coverage reports
+/report
+
 # dependencies
 /node_modules
 /bower_components
@@ -13,6 +16,10 @@
 .project
 .classpath
 provident.iml
+
+# error logs
+/npm-debug.log
+
 
 #System Files
 .DS_Store

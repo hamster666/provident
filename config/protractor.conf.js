@@ -35,7 +35,7 @@ exports.config = {
 			'args': ['show-fps-counter=true']
 		}
 	},
-	resultJsonOutputFile: '../report',
+	resultJsonOutputFile: '../provident/report/e2e-report.json',
 
 	onPrepare: function() {
 		browser.ignoreSynchronization = true;
