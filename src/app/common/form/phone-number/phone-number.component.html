@@ -1,0 +1,12 @@
+<div class="form-group">
+    <label class="form-label">Phone number</label>
+    <input #box
+           type="number"
+           class="form-control"
+           [class.form-control--error]="error"
+           placeholder="Phone number"
+           (blur)="validate(box.value)">
+    <div class="form-error" *ngIf="error">
+        Please enter a valid telephone number.
+    </div>
+</div>
