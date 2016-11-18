@@ -46,7 +46,10 @@ module.exports = {
             }
         ]
     },
-
+    tslint: {
+        emitErrors: true,
+        failOnHint: true
+    },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name: ['app', 'vendor', 'polyfills']
