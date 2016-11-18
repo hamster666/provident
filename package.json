@@ -4,7 +4,8 @@
     "description": "A webpack starter for Angular",
     "scripts": {
         "start": "webpack-dev-server --inline --progress --port 8080",
-        "test": "karma start",
+        "test": "npm run --silent karma",
+        "karma": "karma start",
         "pree2e": "webdriver-manager update webdriver-manager start",
         "e2e": "npm run protractor",
         "protractor": "protractor",
