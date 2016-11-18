@@ -7,7 +7,7 @@ module.exports = function (config) {
         frameworks: ['jasmine'],
 
         files: [
-            {pattern: './config/karma-test-shim.js', watched: false}
+            {pattern: './config/karma-test-shim.js', watched: true}
         ],
 
         preprocessors: {
@@ -24,13 +24,19 @@ module.exports = function (config) {
             noInfo: true
         },
 
-        reporters: ['progress'],
+        reporters: ['progress', 'coverage'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: false,
         browsers: ['PhantomJS'],
-        singleRun: true
+        singleRun: true,
+        coverageReporter: {
+            includeAllSources: true,
+            reporters: [
+                {type: 'html', dir: 'report/'}
+            ]
+        }
     };
 
     config.set(_config);
