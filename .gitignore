@@ -3,6 +3,9 @@
 # compiled output
 /dist
 
+# report output
+/report
+
 # dependencies
 /node_modules
 /bower_components
