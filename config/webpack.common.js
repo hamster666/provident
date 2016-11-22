@@ -48,7 +48,8 @@ module.exports = {
     },
     tslint: {
         emitErrors: true,
-        failOnHint: true
+        failOnHint: true,
+        configuration: require('./tslint.json')
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
