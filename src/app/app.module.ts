@@ -9,6 +9,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { RegisterComponent } from './register/register.component';
 import { CascadeComponent } from './common/cascade/cascade.component';
 import { HeaderComponent } from './common/header/header.component';
+import { PhoneNumberComponent } from './common/form/phone-number/phone-number.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './common/header/header.component';
         FooterComponent,
         RegisterComponent,
         CascadeComponent,
-        HeaderComponent
+        HeaderComponent,
+        PhoneNumberComponent
     ],
     imports: [
         BrowserModule,
@@ -25,6 +27,7 @@ import { HeaderComponent } from './common/header/header.component';
         RouterModule.forRoot([
             { path: 'register', component: RegisterComponent },
             { path: 'cascade', component: CascadeComponent },
+            { path: 'phone-number', component: PhoneNumberComponent},
             { path: '', redirectTo: 'register', pathMatch: 'full'}
         ])
     ],
