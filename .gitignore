@@ -17,9 +17,9 @@
 .classpath
 provident.iml
 
-# error logs
-/npm-debug.log
 
+#error logs
+/npm-debug.log
 
 #System Files
 .DS_Store

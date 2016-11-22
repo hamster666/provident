@@ -1,0 +1,14 @@
+<div class="form-group">
+    <label class="form-label">{{ label }}</label>
+    <input #box
+           type="number"
+           class="form-control"
+           [class.form-control--error]="error"
+           placeholder="{{ placeholder }}"
+           (blur)="validate(box.value)"
+           maxlength="14"
+    >
+    <div class="form-error" *ngIf="error">
+        {{ errorMsg }}
+    </div>
+</div>
